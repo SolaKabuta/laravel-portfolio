@@ -8,17 +8,19 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>Sola Kabuta</title>
 
 </head>
 
-<body class="h-screen text-white bg-gradient-to-l from-black from-80% to-blue-950">
+<body class="h-screen text-white bg-black ">
+    
+    {{-- GRADIENT BACKGROUND TEST--}}
+{{-- <body class="h-screen text-white bg-gradient-to-l from-black from-80% via-blue-950  to-black "> --}}
 
     {{-- NAV-BAR --}}
-
     <div class="container relative">
         <nav class="pt-3">  
                 {{-- logo --}}

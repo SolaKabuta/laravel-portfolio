@@ -10,7 +10,7 @@
     <title>contact</title>
 </head>
 
-<body class="text-white bg-gradient-to-l from-black from-80% to-pink-950 max-h-screen">
+<body class="text-white bg-black">
 
     <!-- NAV-BAR -->
 
