@@ -21,7 +21,8 @@
 
     <div class="container relative">
         <nav class="pt-3">  
-                {{-- <a href="#"><img id="logo" class="w-40 logo" src="{{ URL ('images/log_detour.png')}}"></a> --}}
+                {{-- logo --}}
+                {{-- <a href="#"><img id="logo" class="w-40" src="{{ URL ('images/log_detour.png')}}"></a> --}}
             <p><a id="solakab" class="gap-56" href="{{ route('welcome') }}">Sola Kabuta</a></p>
             <ul class="absolute right-0 flex flex-row justify-end gap-5">
                 <li><a id="projects" href="{{ route('projects') }}">Projects</a></li>
@@ -37,16 +38,18 @@
     <main>
         <div class="container flex justify-center place-items-center">
             <div class="absolute text-6xl font-bold text-center">
-                <h1><span class="text-4xl title">HEY I AM SOLA</span> <span id="shola"
-                        class="text-lg text-green-400 animate-pulse"">(SHO.LA)</span></h1>
+                <h1><span class="text-4xl title">HEY I AM SOLA</span> <span id="shola" class="text-lg text-green-400 animate-pulse"">(SHO.LA)</span></h1>
                 <br>
                 <p>A CREATIVE WEB DEVELOPER</p>
+                <p class="absolute top-32 blur-2xl">A CREATIVE WEB DEVELOPER</p>
                 <br>
                 <p class="items-center text-base text-center ">Crafting top notch design and architecture to achieve
                     your goals.</p>
+                <p class="absolute items-center text-base text-center top-32 blur-lg">Crafting top notch design and architecture to achieve
+                    your goals.</p>
             </div>
-            <div class="flex items-center justify-center ">
-                <spline-viewer class="-z-50"
+            <div class="relative flex items-center justify-center -z-10 ">
+                <spline-viewer class=""
                     url="https://prod.spline.design/buk5gWzMWkDcjp0f/scene.splinecode" defer></spline-viewer>
             </div>
 
@@ -75,7 +78,7 @@
 
 
             <button
-                class="absolute z-10 px-8 py-2 overflow-hidden text-xl bg-black border-2 border-white rounded-md mt-96 isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-blue-400 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 hover:animate-bounce"><a
+                class="absolute z-10 px-8 py-2 overflow-hidden text-xl bg-black border-2 border-white rounded-md mt-96 isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-blue-400 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 hover:animate-bounce focus:text-red-400"><a
                     href="{{ route('contact') }}">Work with me</a>
 
             </button>
