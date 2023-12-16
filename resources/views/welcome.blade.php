@@ -40,7 +40,7 @@
     <main>
         <div class="container flex justify-center place-items-center">
             <div class="absolute text-6xl font-bold text-center mix-blend-difference ">
-                <h1><span class="text-4xl title">HEY I AM SOLA</span> <span id="shola" class="text-lg text-green-400 animate-pulse"">(SHO.LA)</span></h1>
+                <h1><span class="relative text-4xl title">HEY I AM SOLA</span> <span id="shola" class="text-lg text-green-400 animate-pulse"">(SHO.LA)</span></h1>
                 <br>
                 <p class="">A CREATIVE WEB DEVELOPER</p>
                 <p class="absolute top-32 blur-2xl">A CREATIVE WEB DEVELOPER</p>
@@ -77,6 +77,15 @@
                     <div class="swiper-scrollbar"></div>
                 </div>
             </div> --}}
+            
+            {{-- TEST BARBA JS --}}
+            {{-- <div data-barba="container" data-barba-namespace="home" class="container">
+                <div class="relative w-screen h-screen header">
+                    <h1>Homebase</h1>
+                    <div class="header-reavealer"></div>
+                </div>
+                <div class="footer">(01)</div>
+            </div> --}}
 
 
             <button
@@ -101,7 +110,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="anime.min.js"></script>
+
+
 
 
 </body>

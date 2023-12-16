@@ -31,6 +31,15 @@
     <main>
         <h1 class="flex justify-center text-3xl uppercase ">Got a project in mind ? Let's talk.</h1>
         <div class="flex justify-center h-full p-96 ">
+            
+            {{-- TEST BARBA JS --}}
+            {{-- <div data-barba="container" data-barba-namespace="home" class="container">
+                <div class="header">
+                    <h1>Contact</h1>
+                    <div class="header-reavealer"></div>
+                </div>
+                <div class="footer">(02)</div>
+            </div> --}}
 
             <!-- FORM -->
             <section class="flex justify-center bg-black p-7 rounded-2xl place-items-center">
