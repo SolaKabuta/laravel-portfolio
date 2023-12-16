@@ -75,7 +75,7 @@
 
 
             <button
-                class="absolute z-10 px-8 py-2 overflow-hidden text-xl bg-black border-2 border-white rounded-md mt-96 isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-blue-400 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700"><a
+                class="absolute z-10 px-8 py-2 overflow-hidden text-xl bg-black border-2 border-white rounded-md mt-96 isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-blue-400 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 hover:animate-bounce"><a
                     href="{{ route('contact') }}">Work with me</a>
 
             </button>
