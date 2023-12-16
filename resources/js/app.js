@@ -5,7 +5,7 @@ import barba from '@barba/core';
 
 barba.init({
     transitions: [{
-      name: 'opacity-transition',
+      name: 'fade-transition',
       leave(data) {
         return gsap.to(data.current.container, {
           opacity: 0
@@ -18,6 +18,74 @@ barba.init({
       }
     }]
   });
+
+// Get all of the anchor tags in the navbar
+const navbarLinks = document.querySelectorAll('.a');
+
+// Add a Barba.js transition to each anchor tag
+navbarLinks.forEach((link) => {
+  barba.route(link.href, {
+    transition: 'fade-transition'
+  });
+});
+
+barba.init({
+    sync: true,
+  
+    transitions: [{
+      async leave(data) {
+        const done = this.async();
+  
+        // Create a GSAP timeline
+        const tl = gsap.timeline();
+  
+        // Animate the transition element
+        tl.to(".transition", {
+          duration: 0.5,
+          scaleY: 1,
+          transformOrigin: "bottom",
+          ease: "power4.inOut"
+        });
+  
+        // Wait for the transition element to finish animating
+        await tl.play();
+  
+        // Remove the transition element from the DOM
+        data.current.container.remove();
+  
+        // Signal that the transition is complete
+        done();
+      },
+  
+      async enter(data) {
+        // Create a GSAP timeline
+        const tl = gsap.timeline();
+  
+        // Animate the content element
+        tl.from(".content", {
+          top: 0,
+          duration: 1,
+          ease: "power3.out",
+          delay: 0.75
+        });
+  
+        // Wait for the content element to finish animating
+        await tl.play();
+      },
+  
+      async once(data) {
+        // Animate the content element
+        gsap.from(".content", {
+          top: 0,
+          duration: 1,
+          ease: "power3.out",
+          delay: 0.75
+        });
+      }
+    }]
+  });
+  
+
 
 
 const swiper = new Swiper('.swiper', {
