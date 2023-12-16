@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.container {
+    width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+#shola {
+    animation: aniSola 8s ease-in-out alternate-reverse backwards infinite;
+}
+
+@keyframes aniSola {
+    0% {
+        color: white;
+    }
+    25% {
+        color: violet;
+    }
+    50% {
+        color: greenyellow;
+    }
+    75% {
+        color: orange;
+    }
+    100% {
+        color: dodgerblue;
+    }
+}
+
+
