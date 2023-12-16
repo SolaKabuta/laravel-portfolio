@@ -10,19 +10,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
 
     <title>Sola Kabuta</title>
 
 </head>
 
-<body class="h-screen text-white bg-black ">
+<body class="overflow-hidden text-white bg-black">
     
     {{-- GRADIENT BACKGROUND TEST--}}
 {{-- <body class="h-screen text-white bg-gradient-to-l from-black from-80% via-blue-950  to-black "> --}}
 
     {{-- NAV-BAR --}}
     <div class="container relative">
-        <nav class="pt-3">  
+        <nav class="relative pt-3 ">  
                 {{-- logo --}}
                 {{-- <a href="#"><img id="logo" class="w-40" src="{{ URL ('images/log_detour.png')}}"></a> --}}
             <ul class="flex justify-center gap-64 place-items-center">
@@ -59,10 +60,12 @@
                 <p class="absolute items-center text-base text-center top-32 blur-lg">Crafting top notch design and architecture to achieve
                     your goals.</p>
             </div>
-            <div class="relative flex items-center justify-center -z-10">
-                <spline-viewer class=""
+            <div class="relative flex items-center justify-center h-screen -z-10">
+                <spline-viewer class="h-screen"
                     url="https://prod.spline.design/buk5gWzMWkDcjp0f/scene.splinecode" defer></spline-viewer>
             </div>
+            
+            
 
             {{-- SWIPER --}}
 
@@ -107,7 +110,7 @@
     </main>
     <footer>
         <div class="container">
-            <div class="absolute bottom-0 left-0 right-0 flex justify-center gap-5 pb-5 text-center">
+            <div class="fixed bottom-0 left-0 right-0 flex justify-center gap-5 pb-5 text-center">
                 <p><a href="https://www.linkedin.com/in/sola-kabuta/">⏐ Linkedin ⏐</a></p>
                 <p><a href="https://github.com/SolaKabuta">⏐ Github ⏐</a></p>
                 <p><a href="https://www.behance.net/KamKabuta">⏐ Behance ⏐</a></p>
