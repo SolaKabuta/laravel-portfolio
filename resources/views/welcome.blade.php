@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="overflow-hidden text-white bg-black">
+<body class="bg-black text-white">
     
     {{-- GRADIENT BACKGROUND TEST--}}
 {{-- <body class="h-screen text-white bg-gradient-to-l from-black from-80% via-blue-950  to-black "> --}}
@@ -48,7 +48,7 @@
     {{-- CONTENT --}}
 
     <main>
-        <div class="container flex justify-center place-items-center">
+        <div class="container relative flex justify-center place-items-center">
             <div class="absolute text-6xl font-bold text-center mix-blend-difference">
                 <h1><span class="relative text-4xl title">HEY I AM SOLA</span> <span id="shola" class="text-lg text-green-400 animate-pulse"">(SHO.LA)</span></h1>
                 <br>
@@ -60,9 +60,8 @@
                 <p class="absolute items-center text-base text-center top-32 blur-lg">Crafting top notch design and architecture to achieve
                     your goals.</p>
             </div>
-            <div class="relative flex items-center justify-center h-screen -z-10">
-                <spline-viewer class="h-screen"
-                    url="https://prod.spline.design/buk5gWzMWkDcjp0f/scene.splinecode" defer></spline-viewer>
+            <div class="top-0 bottom-0 -z-20">
+                <spline-viewer url="https://prod.spline.design/buk5gWzMWkDcjp0f/scene.splinecode" defer></spline-viewer>
             </div>
             
             
