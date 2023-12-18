@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="{{ asset('/js/index.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/index.js') }}" type="text/javascript"></script>
 
     
 
@@ -31,7 +31,7 @@
             <ul class="flex justify-center gap-64 place-items-center">
                 <li><a id="solakab" class="gap-56" href="{{ route('welcome') }}">Sola Kabuta</a></li>
                 <li><a href="#"><img id="logo" class="w-40" src="{{ URL ('images/log_detour.png')}}"></a></li>
-                <li><label class="hamburger">
+                <li id="burger-btn"><label class="block hamburger">
                     <input type="checkbox">
                     <svg viewBox="0 0 32 32">
                       <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
@@ -123,6 +123,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
     
 
 

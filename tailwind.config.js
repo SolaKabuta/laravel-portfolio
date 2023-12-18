@@ -1,7 +1,9 @@
 /** @type {import('npx tailwindcss init -p
 ').Config} */
 export default {
-  content: [],
+  content: [
+    './resources/**/*.blade.php',
+  ],
   theme: {
     extend: {},
   },
