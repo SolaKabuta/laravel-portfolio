@@ -9,8 +9,6 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="{{ asset('js/index.js') }}" type="text/javascript"></script>
 
     
 
@@ -20,14 +18,12 @@
 
 <body class="text-white bg-black ">
     
-    {{-- GRADIENT BACKGROUND TEST--}}
-{{-- <body class="h-screen text-white bg-gradient-to-l from-black from-80% via-blue-950  to-black "> --}}
+
 
     {{-- NAV-BAR --}}
     <div class="container relative">
         <nav class="relative pt-3 ">  
-                {{-- logo --}}
-                {{-- <a href="#"><img id="logo" class="w-40" src="{{ URL ('images/log_detour.png')}}"></a> --}}
+
             <ul class="flex justify-center gap-64 place-items-center">
                 <li><a id="solakab" class="gap-56" href="{{ route('welcome') }}">Sola Kabuta</a></li>
                 <li><a href="#"><img id="logo" class="w-40" src="{{ URL ('images/log_detour.png')}}"></a></li>
@@ -66,39 +62,7 @@
                 <spline-viewer url="https://prod.spline.design/buk5gWzMWkDcjp0f/scene.splinecode" defer></spline-viewer>
             </div>
             
-            
-
-            {{-- SWIPER --}}
-
-            {{-- <div class="container flex justify-center h-screen place-items-center">
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><img src="/assets/log.png" srcset="/assets/log-2x.png 2x" alt="Your image">Slide 1</div>
-                        <div class="swiper-slide"><img src="/assets/Dev Icons/Mysql Logo.png" alt="Your image"></div>
-                        <div class="swiper-slide">Slide 3</div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
-                </div>
-            </div> --}}
-            
-            {{-- TEST BARBA JS --}}
-            {{-- <div data-barba="container" data-barba-namespace="home" class="container">
-                <div class="relative w-screen h-screen header">
-                    <h1>Homebase</h1>
-                    <div class="header-reavealer"></div>
-                </div>
-                <div class="footer">(01)</div>
-            </div> --}}
+        
 
 
             <button
@@ -120,14 +84,6 @@
 
 
     </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
-    
-
-
-
 
 </body>
 
