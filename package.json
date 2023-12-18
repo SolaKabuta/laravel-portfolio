@@ -24,7 +24,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@barba/core": "^2.9.7",
     "gsap": "^3.12.4"
   }
 }

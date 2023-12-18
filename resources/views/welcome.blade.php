@@ -10,13 +10,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="{{ asset('/js/index.js') }}" type="text/javascript"></script>
+
     
 
     <title>Sola Kabuta</title>
 
 </head>
 
-<body class="bg-black text-white">
+<body class="text-white bg-black ">
     
     {{-- GRADIENT BACKGROUND TEST--}}
 {{-- <body class="h-screen text-white bg-gradient-to-l from-black from-80% via-blue-950  to-black "> --}}
@@ -47,7 +49,7 @@
 
     {{-- CONTENT --}}
 
-    <main>
+    <main class="h-screen">
         <div class="container relative flex justify-center place-items-center">
             <div class="absolute text-6xl font-bold text-center mix-blend-difference">
                 <h1><span class="relative text-4xl title">HEY I AM SOLA</span> <span id="shola" class="text-lg text-green-400 animate-pulse"">(SHO.LA)</span></h1>
@@ -109,7 +111,7 @@
     </main>
     <footer>
         <div class="container">
-            <div class="fixed bottom-0 left-0 right-0 flex justify-center gap-5 pb-5 text-center">
+            <div class="absolute left-0 right-0 flex justify-center gap-5 pb-5 text-center botom-0">
                 <p><a href="https://www.linkedin.com/in/sola-kabuta/">⏐ Linkedin ⏐</a></p>
                 <p><a href="https://github.com/SolaKabuta">⏐ Github ⏐</a></p>
                 <p><a href="https://www.behance.net/KamKabuta">⏐ Behance ⏐</a></p>
@@ -121,6 +123,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
 
 
 
